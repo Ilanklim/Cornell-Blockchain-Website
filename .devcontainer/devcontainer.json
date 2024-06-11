@@ -1,0 +1,60 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "onCreateCommand": "git config --global pull.rebase false",
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        "breadcrumbs.enabled": true,
+        "css.validate": false,
+        "editor.minimap.maxColumn": 80,
+        "editor.minimap.showSlider": "always",
+        "editor.stickyScroll.enabled": true,
+        "editor.wordWrap": "on",
+        "explorer.compactFolders": false,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "fiveServer.openTerminal": false,
+        "git.autofetch": true,
+        "html.format.wrapLineLength": 0,
+        "markdownlint.config": {
+          "MD012": false,
+          "MD013": false,
+          "MD022": false,
+          "MD025": false,
+          "MD033": false,
+          "MD036": false,
+          "MD037": false,
+          "MD040": false
+        },
+        "webvalidator.validateOnSave": false,
+        "workbench.activityBar.visible": true,
+        "workbench.editor.highlightModifiedTabs": true,
+        "workbench.editor.wrapTabs": true,
+        "workbench.tree.indent": 18,
+        "[css]": {
+          "editor.defaultFormatter": "vscode.css-language-features"
+        },
+        "[html]": {
+          "editor.defaultFormatter": "vscode.html-language-features"
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "vscode.typescript-language-features"
+        }
+      },
+      "extensions": [
+        "pucelle.vscode-css-navigation",
+        "rax.vscode-flexbox-picker",
+        "ecmel.vscode-html-css",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-checkbox",
+        "davidanson.vscode-markdownlint",
+        "jgclark.vscode-todo-highlight",
+        "celianriboulet.webvalidator",
+        "yandeu.five-server"
+      ]
+    }
+  }
+}

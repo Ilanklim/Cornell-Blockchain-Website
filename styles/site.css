@@ -1,0 +1,692 @@
+body {
+    background-color: rgb(26, 26, 26);
+    padding: 0px;
+    margin: 0px;
+    color: rgb(230, 230, 230);
+    font-family: sans-serif, Arial, Times;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 5% 10%;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h4 {
+    color: white;
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+strong {
+    color: rgba(164, 0, 0, 0.881);
+}
+
+header {
+    background-color: black;
+    /* background-color: rgb(26, 26, 26); */
+    padding-bottom: 10px;
+    position: fixed;
+    margin-top: 0px;
+    top: 0;
+    width: 100%;
+}
+
+/* Navigation Bar */
+nav {
+    margin: 15px 20px 0px 0px;
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    padding-left: 0px;
+}
+
+nav ul li {
+    justify-content: center;
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(230, 230, 230);
+    color: rgb(26, 26, 26);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    margin-top: 120px;
+}
+
+#ham-btn{
+    background-color: rgb(26, 26, 26);
+    border: none;
+    color: white;
+    font-size: 40pt;
+    cursor: pointer;
+}
+
+.panelists{
+    color: rgb(219, 102, 102);
+    /* color: rgba(164, 0, 0, 0.881); */
+    font-weight: bold;
+}
+
+/* formatting */
+
+.nycconf{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.center-image {
+    display: block;
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.morethan700{
+    font-size:30px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left: 0px;
+}
+
+.conference img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding:20px;
+    width:40%;
+}
+
+.fit-page {
+    padding-left: 30px;
+    padding-right:30px;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.margin-left{
+    margin-left: 20%;
+}
+
+.course h3{
+    padding-right: 0px;
+}
+
+.course p{
+    padding-left: 0px;
+}
+
+.full-image {
+    width: 100%;
+    height: auto;
+}
+
+.black-border {
+    border-top: 2px solid black;
+    margin-top: 10px;
+}
+
+.eboard img{
+    width: 60%;
+    height: 90%;
+    object-fit: cover;
+    border: 1px solid grey;
+}
+
+.conference-photo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    width:50%;
+    padding-bottom:30px;
+}
+
+.past-speakers{
+    margin:auto;
+    text-align: center;
+}
+
+/* Source: https://www.shecodes.io/athena/22284-how-to-scale-images-with-different-sizes-in-a-css-grid#:~:text=%F0%9F%A4%96%20SheCodes%20Athena%20says%3A&text=If%20your%20pictures%20have%20different,resized%20to%20fit%20its%20container.*/
+.eboard-gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+#apply-btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#apply-btn button{
+    font-size: 25pt;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#apply-btn button:hover{
+    background: linear-gradient(180deg, red, white);
+}
+
+#governance, #trading, #consulting, #accelerator, #engineering {
+    margin-left: 20px;
+}
+
+#governance h4, #trading h4, #consulting h4, #accelerator h4, #engineering h4 {
+    color: rgb(70, 70, 70);
+}
+
+#governance p, #trading p, #consulting p, #accelerator p, #engineering p {
+    margin-left: 20px;
+}
+
+.container {
+    margin: 5% 10%;
+}
+
+.quote p{
+    text-align: center;
+    padding: 0px 100px;
+}
+
+.carousel-formatting{
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow-icons{
+    font-size: 30pt;
+    color: white;
+    background-color: #1da0f200;
+    border: none;
+}
+
+.arrow-icons:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Company Conference Images */
+.stack{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-centered{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.speaker-with-company{
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-with-company{
+    text-align: center;
+}
+
+.layerzero img{
+    width: 200px;
+    height: auto;
+}
+/* End of Company Conference Images */
+
+
+/* to here not maintainable */
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.who-are-we {
+    display: flex;
+    flex-direction: row;
+}
+
+.who-are-we p{
+    padding-left: 0px;
+}
+
+.who-are-we-explaination{
+    padding-right:50px;
+}
+
+.CB-introductory-statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 25px 10px 10px;
+}
+
+.stats{
+    flex:1;
+    text-align: center;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.stats h4 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0px 0px;
+    color:rgba(255, 0, 0, 0.881);
+    /* color: rgba(164, 0, 0, 0.881); */
+
+}
+
+.stats p {
+    color: rgb(241, 241, 241);
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: rgba(255, 0, 0, 0.674);
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer ul li{
+    font-size: 15pt
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+}
+
+#twitter {
+    color: #1DA1F2;
+}
+
+#insta {
+    color: #fccc63;
+}
+
+#github {
+    color: rgb(177, 124, 255);
+}
+
+#twitter:hover, #email:hover, #insta:hover, #github:hover {
+    color: black;
+}
+
+#CB-logo{
+    max-width: 350px;
+    max-height: 61px;
+    padding-top: 15px;
+}
+
+.eboard caption {
+    caption-side: bottom;
+}
+
+.learn-more {
+    color:  rgba(25, 63, 189, 0.933);
+}
+
+.learn-more:hover {
+    color: purple;
+}
+
+.eboard-gallery .eboard-member{
+    color: white;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.eboard-gallery .eboard-member:hover {
+    background-color: black;
+}
+
+.eboard-member h3 {
+    margin: 10px 0px 5px 0px;
+    padding-right: 0px;
+}
+
+.eboard-member p {
+    color: rgb(70, 70, 70);
+    margin: 0px 0px;
+    padding-left: 0px;
+}
+
+.nyc-bootcamp{
+    display: flex;
+    flex-direction: row;
+}
+
+.nyc-bootcamp h2{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.nyc-bootcamp p{
+    text-align: center;
+    margin: 0px 0px;
+    padding-left: 0px;
+}
+
+.nyc-bootcamp img{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 500px;
+}
+
+#nyc-source a{
+    font-size: 10pt;
+    color: white;
+    text-align: left;
+}
+
+/* photos */
+.resize-avalabs img{
+    width: 180px;
+    height:100px;
+}
+
+.resize-consensus img{
+    width: 270px;
+    height:100px;
+}
+
+.resize-dydx img{
+    width: 220px;
+    height:100px;
+}
+
+.resize-lido img{
+    width: 240px;
+    height:100px;
+}
+
+#accelerator {
+    flex-direction: row;
+}
+
+.button-style {
+    background-color: grey;
+    border: none;
+    color: white;
+    font-size: 40pt;
+    cursor: pointer;
+}
+
+.source-links a{
+    /* color: rgba(76, 117, 254, 0.933); */
+    color: rgba(25, 63, 189, 0.933);
+    font-size: 12pt;
+}
+
+.source-links a:hover{
+    color: purple;
+}
+
+/* Modal */
+.background-modal {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+#apply-popup div {
+    background-color: black;
+    position: fixed;
+    z-index: 11;
+    width: 66%;
+    height: auto;
+    top: 37.5%;
+    left: 18%;
+}
+
+.modal-information h3,p{
+    padding-left: 20px;
+}
+
+.modal-information a{
+    color: white;
+}
+
+.modal-information a:hover{
+    color: blue;
+}
+
+#x-button{
+    background-color: white;
+    color: black;
+    font-size: 16pt;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+#x-button:hover{
+    color: rgba(255, 0, 0, 0.881);
+}
+
+#x-button-align{
+    text-align: right;
+}
+/* End Modal */
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1184px) {
+    nav{
+        flex-direction: column;
+        float: none;
+    }
+
+    nav ul{
+        padding-top: 10px;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: 180px;
+    }
+
+    .blurb{
+        font-size: 25pt;
+    }
+
+    .nyc-bootcamp{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nyc-source{
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .partners{
+        flex-wrap: wrap;
+    }
+
+    .conference-photo img{
+        width:70%;
+    }
+
+    .row-centered{
+        flex-wrap: wrap;
+    }
+
+    .eboard-member h3{
+        font-size: 25px;
+    }
+
+    .eboard-member p{
+        font-size: 15px;
+    }
+}
+
+/* Narrow Screen */
+@media screen and (max-width: 850px) {
+    .eboard-gallery {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+      }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li a:hover{
+        text-decoration: underline;
+        background-color: rgba(255, 0, 0, 0);
+        color: white;
+        box-shadow: none;
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+    .blurb{
+        font-size: 20pt;
+    }
+
+    #CB-logo{
+        float: right;
+        margin-top: 8px;
+        padding-top: 0px;
+    }
+
+    .CB-introductory-statistics{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .stats p{
+        text-align: center;
+    }
+
+    .who-are-we{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .who-are-we img{
+        margin-top: 10px;
+    }
+
+    .who-are-we-explaination{
+        padding-right:0px;
+    }
+
+    #apply-btn button{
+        font-size: 18pt;
+    }
+
+    .center-image img{
+        width: 400px;
+    }
+
+    .nyc-bootcamp, #accelerator{
+        flex-direction: column;
+    }
+
+    .nyc-bootcamp img{
+        width: 400px;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .eboard-member h3{
+        font-size: 15pt;
+    }
+
+    .eboard-member p{
+        font-size: 12pt;
+    }
+
+    .conference-photo img{
+        width:80%;
+    }
+
+    .modal-information p, h3{
+        padding-right: 20px;
+    }
+
+    .quote p{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

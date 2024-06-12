@@ -19,13 +19,13 @@ CB Website/
 ├── .gitignore
 ├── .gitattributes
 ├── .devcontainer/
-│   ├── README.md
 │   ├── devcontainer.json
 ├── conferences.html
 ├── e-board.html
 ├── education.html
 ├── index.html
 ├── subteams.html
+├── README.md
 ├── images/
 │   ├── conference/
 │   ├── eboard/
